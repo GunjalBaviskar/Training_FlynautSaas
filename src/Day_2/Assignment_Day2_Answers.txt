@@ -1,0 +1,191 @@
+// Write a program to declare variables for storing your name, age, grade, and whether you are astudent. Print these values. 
+
+class Main {
+
+    public static void main(String[] args) {
+
+         String name = "John";
+
+         int age = 21;
+
+         char grade = 'A';
+
+         boolean student = true;
+
+         
+
+	 System.out.println("Name: " + name);
+
+         System.out.println("Age: " + name);
+
+         System.out.println("Grade: " + name);
+
+         System.out.println("Student: " + (student ? "Yes" : "No"));
+
+    }
+}
+
+// Create a program that calculates the area of a rectangle. Takelength and breadth as variables. 
+
+public class Main {
+  public static void main(String[] args) {
+    float length = 20.5f; // value is in meter
+    float breadth = 10.5f; // value is in meter
+    float area = length * breadth;
+    
+    System.out.println("Area of a rectangle is " + area + " sq. meter");
+  }
+}
+
+// Write a program to calculate the sum, difference, product,quotient, and remainder of two numbers. 
+
+public class Main {
+  public static void main(String[] args) {
+    int num1 = 20;
+    int num2 = 10;
+    int sum = num1 + num2;
+    int difference = num1 - num2;
+    int product = num1 * num2;
+    int quotient = num1 / num2;
+    int remainder = num1 % num2; 
+    
+    System.out.println("Sum is " + sum);
+    System.out.println("difference is " + difference);
+    System.out.println("product is " + product);
+    System.out.println("quotient is " + quotient);
+    System.out.println("remainder is " + remainder);
+  }
+}
+
+// Write a program to check if a given number is greaterthan, less than, or equal to another number. 
+
+public class Main {
+  public static void main(String[] args) {
+    int x = 20;
+    int y = 20;
+    if (x > y) {
+      System.out.println("x is greater than y");
+    } else if(x < y){
+      System.out.println("x is less than y");
+    } else{ 
+      System.out.println("x is equal to y");
+    }
+  }
+}
+
+// Create a program to check if a person is eligible to vote (age >= 18 and has a voter ID). 
+
+public class Main {
+  public static void main(String[] args) {
+    int age=14;
+    if (age>=18) {
+      System.out.println("Person is eligible to vote");
+    } else {
+      System.out.println("Person is not eligible to vote");
+    }  
+  }
+}
+
+// Write a program that takes the radius of a circle as inputand calculates both its area and circumference using variables and arithmetic operators. 
+
+public class Main {
+  public static void main(String[] args) { 
+    float r = 20;
+    float pi = 3.14f;
+    float area = pi * r * r ;
+    float circumference = 2 * pi * r; 
+    
+    System.out.println("Area of a circle is " + area);
+    System.out.println("Circumference of a circle is " + circumference);
+  }
+}
+
+// Createa program that accepts the marks of three subjects as input and checks if the student haspassed (marks in all subjects >= 40 and average >= 50). (Read About Scanner Class)* 
+
+public class Main {
+  public static void main(String[] args) { 
+    int math = 40;
+    int science = 40;
+    int english = 42;
+    float sum = math + science +english;
+    float avg = sum / 3;
+   	if(math >= 40 && science >=40 && english >=40 && avg >=50) {
+    	System.out.println("Student has passed the exam");
+    } else {
+     	System.out.println("Student has failed the exam");
+    }
+  }
+}
+
+// Write aprogram to check if a number is even or odd using an if statement. if-else Statement Write aprogram to determine if a number is positive, negative, or zero using an if-else statement.
+
+public class Main {
+  public static void main(String[] args) {   
+    int num = 21;
+    if (no%2==0){
+	System.out.println("Number is even");
+    } else {
+	System.out.println("Number is odd");
+    }   
+  }
+}
+
+// Create a program that takes a person's age and prints their life stage: 
+	Age < 13: "Child" 
+	Age 13-19: "Teenager" 
+	Age 20-59: "Adult" 
+	Age >= 60: "Senior Citizen" 
+
+public class Main {
+  public static void main(String[] args) {
+    int age=75;
+    if (age < 13) {
+      System.out.println("child.");
+    } else if(age<20){
+      System.out.println("Teenager.");
+    } else if(age<60){
+        System.out.println("adult.");
+    } else {
+        System.out.println("Senior citizen.");   
+    }   
+  }
+}
+
+// Write a program to check if anumber is divisible by both 5 and 3. 
+
+public class Main {
+  public static void main(String[] args) { 
+    int num = 10;
+    boolean divBy5 = num %5== 0;
+    boolean divBy3 = num %3== 0;
+   	if(divBy5 && divBy3) {
+    	System.out.println("Number is divisible by 5 and 3");
+    } else if (divBy5){
+     	System.out.println("Number is divisible by 5 and not by 3");
+    }  else if (divBy3){
+     	System.out.println("Number is divisible by 3 and not by 5");
+    }  else {
+     	System.out.println("Number is not divisible by 5 and 3");
+    }
+  }
+}
+
+// Create a program that asks the user to input a year andchecks if it is a leap year: 
+	A year is a leap year if it is divisible by 4 but not divisible by 100,except if it is divisible by 400. 
+
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) { 
+    Scanner scanner = new Scanner(System.in);  
+	System.out.print("Enter a year: ");
+    int year = scanner.nextInt();
+    
+   	if( year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
+    	System.out.println(year + " is a leap year");
+    } else {
+     	System.out.println(year + " is not aleap year");
+    }
+    scanner.close();
+  }
+}
